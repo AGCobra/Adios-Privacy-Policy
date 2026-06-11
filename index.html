@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adios Privacy Policy</title>
+<meta name="description" content="Privacy policy for Adios, a local DNS ad blocker for iPhone and iPad.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1d19;
+    --muted: #555d52;
+    --accent: #2e7a05;
+    --rule: #e2e8de;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #040903;
+      --text: #e7efe3;
+      --muted: #9aa896;
+      --accent: #76ee12;
+      --rule: #1d2b18;
+    }
+  }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 4px;
+  }
+  .effective {
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9rem;
+    margin: 0 0 32px;
+  }
+  h2 {
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    margin: 40px 0 8px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { margin: 0 0 14px; }
+  ol { padding-left: 22px; }
+  a { color: var(--accent); }
+  .lede { font-size: 1.1rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Adios Privacy Policy</h1>
+  <p class="effective">Effective date: June 10, 2026</p>
+
+  <p class="lede">Adios is a local DNS ad blocker for iPhone and iPad. Filtering happens on your device. Adios has no accounts, no analytics, and no telemetry, and we do not operate servers that carry your traffic.</p>
+
+  <h2>What Stays on Your Device</h2>
+  <p>Your settings, downloaded blocklists, compiled filtering rules, blocking statistics, and recent diagnostic events are stored by Adios on your device. The optional DNS query log is off by default; if you turn it on, it is stored only on your device, you choose how long entries are kept, you can apply redaction at write time (truncate or hash domains), and you can clear it at any time. Deleting the app deletes Adios data from that device.</p>
+  <p>Adios marks its query log, diagnostics, and temporary files (including diagnostic exports) as excluded from device backups. Your settings and blocklists may be included in device backups, which are controlled by iOS and Apple — Adios does not receive your backups.</p>
+
+  <h2>What Leaves Your Device</h2>
+  <p>Three things, and nothing else:</p>
+  <ol>
+    <li>DNS queries for allowed domains are sent to the DNS resolver selected in Adios settings. Quad9 is the default unless you choose another preset (such as Cloudflare or Google) or a custom resolver. That resolver receives those queries and your IP address in order to answer them, under its own privacy policy — please review it. Adios is not affiliated with these resolvers and we do not receive this traffic. Blocked queries are answered on your device and are never sent anywhere.</li>
+    <li>Blocklist updates are downloaded from each list's public source. Like any web download, the servers hosting these files see standard request data such as your IP address and user agent. These downloads are the same files for everyone and carry no information about you or your browsing.</li>
+    <li>Diagnostic exports exist only if you create them. Exporting is disabled by default; you must first allow it in Settings ▸ Privacy, then tap Export Diagnostics, and the file is shared only by you, only to destinations you pick. The DNS query log is additionally excluded from exports unless you explicitly include it.</li>
+  </ol>
+
+  <h2>About the VPN Permission</h2>
+  <p>iOS requires Adios to use a local VPN configuration so DNS requests can be routed to the on-device filter. This is not a traditional VPN: your web traffic is never routed through our servers — we do not operate any traffic-carrying servers. Adios never decrypts, inspects, or modifies HTTPS or other encrypted traffic, does not install certificates, and does not proxy your connections.</p>
+
+  <h2>What We Never Collect Automatically</h2>
+  <p>Adios does not automatically collect, upload, sell, rent, share, or disclose your DNS query logs, browsing history, blocked-domain history, or per-domain activity. The app contains no analytics SDKs and sends no telemetry. We do not collect device identifiers, usage statistics, or crash reports from the App Store version of the app.</p>
+  <p>If you choose to contact us or send us a diagnostic export, we receive only what you choose to send, use it only to respond, troubleshoot, or maintain the app, and delete it when it is no longer needed for support unless we are required to keep it for legal reasons.</p>
+
+  <h2>Your Controls</h2>
+  <p>You can change resolvers, disable or clear the optional query log, change log retention and redaction, exclude the query log from diagnostic exports, and delete Adios data from your device by deleting the app. Because Adios does not operate accounts or collect app telemetry, we generally cannot access, export, or delete app data for you — it is not in our possession. If you send us an email or diagnostic export, you can ask us to delete it.</p>
+
+  <h2>TestFlight Beta Note</h2>
+  <p>If you test Adios through TestFlight, Apple may provide us with crash logs, usage information, and feedback you submit through TestFlight, under Apple's TestFlight terms. This TestFlight data is separate from the App Store version of Adios.</p>
+
+  <h2>Purchases</h2>
+  <p>Adios is sold through the App Store. Apple processes your payment; we do not receive your name, payment details, or any other personal information from your purchase.</p>
+
+  <h2>Children</h2>
+  <p>Adios is a general-audience app and is not directed to children. Adios does not knowingly collect personal information from children. The app does not create accounts, show ads, use analytics, or send telemetry. If you contact us or send a diagnostic export, we receive only what you choose to send.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>If this policy changes, the updated text ships with the app update and the effective date above is revised. We will never change the policy to start collecting your browsing data.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or your data: <a href="mailto:agchehebar@gmail.com">agchehebar@gmail.com</a></p>
+</main>
+</body>
+</html>
